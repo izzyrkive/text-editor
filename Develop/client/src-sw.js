@@ -24,6 +24,7 @@ warmStrategyCache({
   strategy: pageCache,
 });
 
+// Added asset caching
 registerRoute(
   ({ request }) =>
   request.destination === 'style' ||
