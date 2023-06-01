@@ -1,5 +1,6 @@
 const choiceResult = await deferredPrompt.userChoice;
 
+// Logic for installing the PWA
 if (choiceResult.outcome === 'accepted') {
   console.log('PWA installed');
 } else {
