@@ -12,7 +12,7 @@ console.log('jate database created');
 },
 });
 
-// Add logic to a method that accepts some content and adds it to the database
+// Added logic to a method that accepts content and adds it to the DB
 export const putDb = async (content) => {
 const db = await openDB('jate', 1);
 const tx = db.transaction('jate', 'readwrite');
@@ -21,7 +21,7 @@ await store.put(content);
 await tx.complete;
 };
 
-// Add logic for a method that gets all the content from the database
+// Added logic for a method that gets all content fom the DB
 export const getDb = async () => {
 const db = await openDB('jate', 1);
 const tx = db.transaction('jate', 'readonly');
