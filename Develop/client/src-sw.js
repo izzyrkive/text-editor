@@ -24,7 +24,7 @@ warmStrategyCache({
   strategy: pageCache,
 });
 
-// Added asset caching
+// Added asset caching for starter code to do
 registerRoute(
   ({ request }) =>
   request.destination === 'style' ||
@@ -42,9 +42,3 @@ registerRoute(
   ],
   })
   );
-  
-  
-  
-  
-  
-  
